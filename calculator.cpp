@@ -43,7 +43,7 @@ int main() {
     }
     cin >> next;
   }
-  cout << "\n\n\n\nResult: " << pop(numStack) << endl;
+  cout << "Ans: " << pop(numStack) << endl;
 
 
   return 0;
