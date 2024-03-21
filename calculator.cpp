@@ -28,15 +28,15 @@ int main() {
         push(numStack, val1+val2);
       }
       else if(next == "-"){
-        push(numStack, val1-val2);
+        push(numStack, val2 - val1);
       }
       else if(next == "*"){
         push(numStack, val1*val2);
       }
       else{
         int total = 1;
-        for(int i = 0; i < val2; i++){
-          total *= val1;
+        for(int i = 0; i < val1; i++){
+          total *= val2;
         }
         push(numStack, total);
       }
@@ -47,6 +47,6 @@ int main() {
 
   delete[] numStack.numbers;
 
-  
+
   return 0;
 }
