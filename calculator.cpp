@@ -45,6 +45,8 @@ int main() {
   }
   cout << "Ans: " << pop(numStack) << endl;
 
+  delete[] numStack.numbers;
 
+  
   return 0;
 }
