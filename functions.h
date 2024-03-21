@@ -9,7 +9,7 @@
  * The stack data type that is initially empty and has a singleton capacity.
  */
 struct Stack {
-	int* numbers = new int[1] {};	// array of numbers
+	int* numbers = new int[1];	// array of numbers
 	int capacity    = 1;       	// capacity of array
 	int count       = 0;		// number of elements in array
 };
