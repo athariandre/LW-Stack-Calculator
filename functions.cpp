@@ -32,9 +32,6 @@ void push(Stack& stack, int number) {
     stack.capacity *= 2;
   }
 
-
-  INFO_STRUCT(stack);
-  INFO(number);
 }
 
 /**
@@ -54,7 +51,6 @@ int pop(Stack& stack) {
   stack.count--;
 
 
-  INFO_STRUCT(stack);
 
   return(popped);
   
@@ -74,6 +70,5 @@ int peek(const Stack& stack) {
   }
 
 
-  INFO_STRUCT(stack);
   return stack.numbers[stack.count-1];
 }
